@@ -3,7 +3,7 @@ pipeline {
          tools {nodejs "NodeJS"}
 
     stages {
-        stage("Code Checkout") {
+        stage("Code checkout") {
             steps {
               
               url: 'https://github.com/rbkore/node-unit-tests.git'
