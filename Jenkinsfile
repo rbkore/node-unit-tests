@@ -6,7 +6,7 @@ pipeline {
         stage("Code checkout") {
             steps {
               
-              url: 'https://github.com/rbkore/node-unit-tests.git'
+              git 'https://github.com/rbkore/node-unit-tests.git'
                   
             }
               }
