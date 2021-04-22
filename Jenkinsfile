@@ -39,10 +39,8 @@ pipeline {
          post {
                   always {
                           
-                                   to: 'rbkore123@gmail.com',
-                                   body: '${DEFAULT_CONTENT}', 
-                                    mimeType: 'text/html',
-                                    subject: '${DEFAULT_SUBJECT}',
+                                   emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], 
+                                            [$class: 'RequesterRecipientProvider']], subject: 'Test'
                   }
                   }
                   
