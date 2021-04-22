@@ -27,13 +27,6 @@ pipeline {
 
                                        }
                                 }
-
-         stage("unit Test") {
-                            steps {
-                                sh "npm test"
-
-                              }
-                        }
              }
          
          post {
