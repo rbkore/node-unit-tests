@@ -35,5 +35,19 @@ pipeline {
                               }
                         }
              }
+         
+         post {
+                  always {
+                           emailext {
+                                    attachLog: true,
+                                    subject: "obname",
+                                    body:  "emailbody"
+                                    compressLog: false,
+                                    recipientProviders: [[$class: 'DevelopersRecipientProvider']],
+                                             to: 'rbkore123@gmail.com'  }
+                           }
+                  }
+                  
+                                    
      }
 
