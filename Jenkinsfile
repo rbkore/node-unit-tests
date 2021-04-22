@@ -33,7 +33,7 @@ pipeline {
                   always {
                           
                                    emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], 
-                                            [$class: 'RequesterRecipientProvider']], subject: 'Test'
+                                            [$class: 'RequesterRecipientProvider']], subject: 'Test',
                            to: 'rbkore123@gmail.com'
                   }
                   }
