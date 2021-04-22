@@ -44,7 +44,8 @@ pipeline {
                                     body:  "emailbody"
                                     compressLog: false,
                                     recipientProviders: [[$class: 'DevelopersRecipientProvider']],
-                                             to: 'rbkore123@gmail.com'  )
+                                             to: 'rbkore123@gmail.com' 
+                           )
                   }
                   }
                   
